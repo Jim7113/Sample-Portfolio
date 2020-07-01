@@ -1,0 +1,269 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 37px;
+}
+
+h4{
+    color: dimgray;
+    font-size: 17px;
+}
+
+#hello{
+    margin-top: 10%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.top-section{
+    background-image: url("img/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 700px;
+}
+
+.my-name {
+    animation: my-name;
+    color: lightcoral;
+    font-size: 33px;
+}
+  
+.welcome-txt {
+    animation: welcome-txt;
+    color: lightcoral;
+    font-size: 33px;
+}
+  
+.my-name, .welcome-txt {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 15s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+}
+  
+.my-name::after, .welcome-txt::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+}
+  
+@keyframes welcome-txt {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 15em;
+    }
+}
+  
+@keyframes my-name {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 7.5em;
+    }
+}
+  
+@keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}
+
+
+.half-section{
+    padding-left: 3%;
+    width: 45%;
+    float: left;
+}
+
+.content{
+    padding-left: 15%;
+    padding-top: 15%;
+}
+
+.half-section img{
+    margin-top: 2%;
+    width: 90%;
+}
+
+.button1{
+    text-decoration: none;
+    background-image: linear-gradient(45deg, lightskyblue, lightseagreen);
+    margin-top: 50px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+a.button1:hover {
+    text-decoration: none;
+    background-image: linear-gradient(45deg, orange, lightcoral);
+    margin-top: 50px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.mid-section{
+    margin-top: 10%;
+    background-image: url("img/biography-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 700px;
+}
+
+.mid-section img{
+    margin-left: 100px;
+    margin-top: 3%;
+    width: 75%;
+}
+
+.button2{
+    text-decoration: none;
+    background-image: linear-gradient(45deg, hotpink, lightcoral);
+    margin-top: 50px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+a.button2:hover {
+    text-decoration: none;
+    background-image: linear-gradient(45deg, orange, lightcoral);
+    margin-top: 50px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.exp-section{
+    margin-top: 5%;
+    background-image: url("img/latest-work-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 150% 120%;
+    height: 550px;
+}
+
+.third-section{
+    padding-left: 3%;
+    width: 30%;
+    float: left;
+}
+
+.third-section div{
+    width: 65%;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    top: 30px;
+    left: 45px;
+    border: 5px solid;
+    border-image: linear-gradient(90deg, hotpink, lightcoral);
+    border-image-slice: 1;
+    display: none;
+}
+
+div.third-section img:hover + div{
+    display: block;
+}
+
+.exp-section img{
+    margin-top: 10%;
+    width: 95%;
+    box-shadow: 10px 10px 30px gray;
+}
+
+.exp-section h2{
+    font-size: 33px;
+    text-align: center;
+    text-shadow: 3px 5px 5px gray;
+}
+
+.client-section{
+    margin-top: 5%;
+    background-image: url("img/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 650px;
+}
+
+.client-section h2{
+    font-size: 33px;
+    text-align: center;
+    margin-top: 5%;
+    text-shadow: 3px 5px 5px gray;
+}
+
+.client-section h3{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.client-section p{
+    text-align: center;
+    margin-top: -15px;
+}
+
+.client-section h5{
+    width: 35%;
+    font-size: 20px;
+    text-align: center;
+    margin: 3% 33%;
+}
+
+.mail-link{
+    background-image: linear-gradient(45deg, hotpink, red);
+    margin: 5% 35%;
+    padding: 20px 30px 3px 30px;
+    border-radius: 7px;
+}
+
+div.mail-link:hover{
+    background-image: linear-gradient(45deg, lightblue, lightseagreen );
+    margin: 5% 35%;
+    padding: 20px 30px 3px 30px;
+    border-radius: 7px;
+}
+
+.btn-lg{
+    text-decoration: none;
+}
+
+.lg-btn-text{
+    color: white;
+}
+
+.lg-btn-text p{
+    text-align: center;
+    margin-top: 3px;
+}
+
+.lg-btn-text h6{
+    font-size: 20px;
+    margin-top: -3px;
+    text-align: center;
+}
+
+footer{
+    margin-top: 5%;
+    text-align: center;
+    padding: 45px 10px 30px 10px;
+    box-shadow: 20px 20px 40px gray;
+}
